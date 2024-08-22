@@ -74,3 +74,12 @@
   width: 20px;
   margin-bottom: 3px;
 }
+@media (max-width: 576px) {
+  .product-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .thumbnail {
+    width: 90%;
+  }
+}

@@ -37,7 +37,8 @@ class AllProductsSection extends Component {
         imageUrl: product.image_url,
       }))
       this.setState({
-        productsList: upDateProducts,isLoader:false
+        productsList: upDateProducts,
+        isLoader: false,
       })
     }
   }
@@ -45,7 +46,7 @@ class AllProductsSection extends Component {
   renderProductsList = () => {
     const {productsList} = this.state
     return (
-      <div>
+      <div className="product-list-container">
         <h1 className="products-list-heading">All Products</h1>
         <ul className="products-list">
           {productsList.map(product => (
@@ -58,7 +59,7 @@ class AllProductsSection extends Component {
 
   getLoaderSpinner = () => (
     <>
-      <Loader type="BallTriangle" width={50} height={50}  color="#00BFFF" />
+      <Loader type="BallTriangle" width={50} height={50} color="#00BFFF" />
     </>
   )
 

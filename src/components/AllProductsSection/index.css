@@ -21,3 +21,9 @@
 .allproducts {
   align-self: center;
 }
+@media(max-width:568px) {
+  .product-list-container {
+  margin: 20px;
+}
+}
+
